@@ -69,12 +69,10 @@ nav li {
     grid-template: repeat(4, 1fr) / repeat(6, 1fr);
   }
 #me {
-    width: 500px;
-    height: auto;
+    width: 100%;
     grid-row: 3 / span 2;
     grid-column: 3 / span 2;
-    height: 100%;
-    width: auto;
+    align-self: end;
 }
 /* Portfolio */
 #projects {
