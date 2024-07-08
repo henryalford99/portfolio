@@ -1,10 +1,10 @@
 /* Universal Styles */
 
 html {
-    background-color: white;
-    color: #2c4427;
+    background-color: #84aeee;
+    color: white;
     font-size: 16px;
-    font-family: Open Sans;
+    font-family: Montserrat, Roboto, sans-serif;
 }
 
 /* Header */
@@ -78,50 +78,80 @@ h1 {
     box-shadow: 0 0 #388E3C;
     top: 2px;
     right: 4px;
-    background-color: #CFB53B;
+    background-color: #eed774;
 }
 
 
 /* Portfolio */
 #projects {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121315ed
 }
 #projects h2 {
-    text-align: center;
-    width: 100%;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family: Chalkduster, Arial, sans-serif;
+    font-size: 2rem;
+    padding: 0;
+    margin: 10px 5px 0;
+    display: inline-block;
 }
 #project-container {
     display: flex;
     align-content: space-around;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 95%;
+    margin: 40px 0px 40px;
 }
+
 #projects img {
     max-width: 300px;
+    min-width: 150px;
     height: 100px;
 }
 .project {
-    background-color: white;
-    border: 1px solid black;
-    margin: 1%;
     display: flex;
     flex-direction: vertical;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+    flex: 1 1 200px;
     max-width: 400px;
     padding: 15px;
     box-sizing: border-box;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.79);
+    border: 3px solid rgba(0, 0, 0, 0.79);
+    border-radius: 10px;
+    font-family: Montserrat, Roboto, sans-serif;
+    margin: 20px;
 }
 .project * {
     text-align: center;
 }
 .see-more {
-    
+    text-decoration: none;
+    color: #121315ed;
+    margin: 5px;
 }
 .see-more * {
     border: 1px solid black;
-    padding: 10px 15px;
+    padding: 5px 10px;
+    margin: 0;
+    font-weight: 200px;
+    font-size: 0.8em;
+    border-radius: 4px;
+    background-color: rgb(229, 227, 227);
+}
+.see-more h4:hover {
+    background-color: #eed774;
+}
+.see-more h4:active {
+    background-color: rgb(112, 112, 112);
+    border: none;
 }
 
 
