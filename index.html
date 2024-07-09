@@ -69,22 +69,24 @@
                 <h2>Reach Out</h2>
                 <div id="contact-form">
                     <h4>Let's see how I can help you reach your goals!</h4>
-                    <form id="info" autocomplete="on">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" name="first-name" id="first-name">
-                        <br>
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" name="last-name" id="last-name">
-                        <br>
-                        <label for="email">Email Address:</label>
-                        <input type="email" name="email" id="email">
-                    </form>
-                    <form id="message" autocomplete="on">
-                        <label for="message">Leave a message here:</label>
-                        <textarea id="message" name="message" rows="5" cols="5"></textarea>
-                        <br>
-                        <div>
-                            <input type="submit" value="Submit">
+                    <form id="myForm" name="myForm" autocomplete="on" onsubmit="return validateName()" onsubmit="return validateEmail()">
+                        <div id="info" name="info">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" name="first-name" id="first-name">
+                            <br>
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" name="last-name" id="last-name">
+                            <br>
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div id="messager" name="messager">
+                            <label for="message">Leave a message here:</label>
+                            <textarea id="message" name="message" rows="5" cols="5" required></textarea>
+                            <br>
+                            <div>
+                                <input type="submit" value="Submit">
+                            </div>
                         </div>
                     </form>
                 </div>
