@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resources/styles.css">
         <script src="resources/script.js"></script>
     </head>
@@ -20,12 +21,12 @@
                 <div class="where-who" id="where">
                     <h4>where:</h4>
                     <p id="time"></p>
-                    <a class="nav" href="contact-page"><p>contact me:</p></a>
+                    <a class="nav" href="#contact-page"><p>contact me:</p></a>
                 </div>
                 <div class="where-who" id="who">
                     <h4>who:</h4>
-                    <p>Science teacher turned web designer.<br>Let's bring learning online.</p>
-                    <a class="nav" href="contact-page"><p>more about me:</p></a>
+                    <p id="bio">Science teacher turned web designer.<br>Let's bring learning online.</p>
+                    <a class="nav" href="#about"><p>about me:</p></a>
                 </div>
                 </div>
             </header>
@@ -37,49 +38,60 @@
                         <img src="resources/images/strut-running.png" alt="Strut Running Club home page">
                         <p class="proj-description">From-scratch website designed for the queer Phoenix running community</p>
                         <p class="skills-used">Skills Used: HTML, CSS, Responsive Web Design</p>
-                        <a class="see-more" href="#"><h4>See More:</h4></a>
+                        <a class="see-more" href="#"><h4>View Project:</h4></a>
                     </div>
                     <div class="project">
                         <h3 class="proj-title">eduSTEM Curriculum Network</h3>
                         <img src="resources/images/eduSTEM.png" alt="eduSTEM Network home page">
                         <p class="proj-description">Professional styles for an educational group providing resources to districts and teachers</p>
                         <p class="skills-used">Skills Used: HTML, CSS, Web Design Fundamentals</p>
-                        <a class="see-more" href="#"><h4>See More:</h4></a>
+                        <a class="see-more" href="#"><h4>View Project:</h4></a>
                     </div>
                     <div class="project">
                         <h3 class="proj-title">Bootlegger's Cheatsheet</h3>
                         <img src="resources/images/bootleggers.png" alt="Bootlegger's Cheatsheet home page">
                         <p class="proj-description">Coding resource providing information on common CSS Selectors</p>
                         <p class="skills-used">Skills Used: HTML, CSS, Web Design Fundamentals</p>
-                        <a class="see-more" href="#"><h4>See More:</h4></a>
+                        <a class="see-more" href="#"><h4>View Project:</h4></a>
                     </div>
                 </div>
                 <h2>projects</h2>
             </section>
             <section id="about">
-                <h3>Skills:</h3>
-                <p>As a science teacher, I'm fascinated by the intersection of technology and human creativity, and how each can transform the learning process. My journey into web design began with a desire to create engaging, interactive resources for my students. </p>
-                <p>Through self-study and hands-on practice, I've developed skills in HTML, CSS, JavaScript, and accessible web design, blending my scientific background with creativity and technical proficiency. Now, I'm excited to share my combined love for teaching and technology to create impactful digital experiences.</p>
+                <h2>About Me</h2>
+                <div id="about_me">
+                    <p>As a science teacher, I'm fascinated by the intersection of technology and human creativity, and how each can transform the learning process. My journey into web design began with a desire to create engaging, interactive resources for my students. </p>
+                    <p>Through self-study and hands-on practice, I've developed skills in HTML, CSS, JavaScript, and accessible web design, blending my scientific background with creativity and technical proficiency. Now, I'm excited to share my combined love for teaching and technology to create impactful digital experiences.</p>
+                </div>
+                <h2>About Me</h2>
             </section>
             <section id="contact-page">
                 <h2>Reach Out</h2>
-                <h4>Let's see how I can help you reach your goals!</h4>
-                <form>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" name="first-name" id="first-name">
-                    <br>
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" name="last-name" id="last-name">
-                    <br>
-                    <label for="email">Email Address:</label>
-                    <input type="text" name="email" id="email">
-                </form>
-                <form>
-                    <textarea id="message" name="message" rows="5" cols="5">Leave a message here.</textarea>
-                </form>
+                <div id="contact-form">
+                    <h4>Let's see how I can help you reach your goals!</h4>
+                    <form id="info" autocomplete="on">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name" id="first-name">
+                        <br>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="last-name" id="last-name">
+                        <br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email">
+                    </form>
+                    <form id="message" autocomplete="on">
+                        <label for="message">Leave a message here:</label>
+                        <textarea id="message" name="message" rows="5" cols="5"></textarea>
+                        <br>
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <h2>Reach Out</h2>
             </section>
             <footer>
-                <p>A person who sees Quality and feels it as they work is a person who cares.</p>
+                <p>The grass is greener where you water it.</p>
             </footer>
         </main>
     </body>
